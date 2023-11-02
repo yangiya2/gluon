@@ -1,5 +1,4 @@
-import { exec } from 'https://deno.land/std@0.170.0/node/child_process.ts';
-
+import { exec } from '../deps.ts';
 const killProcesses = async pids => Deno.build.os !== 'windows' ? Promise.resolve('') : new Promise(resolve => exec(`taskkill /F ${pids.map(x => `/PID ${x}`).join(' ')}`, (e, out) => resolve(out)));
 
 export default async (CDP, { browserEngine, closeHandlers }) => {

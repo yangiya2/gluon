@@ -1,4 +1,4 @@
-import { spawn } from 'https://deno.land/std@0.170.0/node/child_process.ts';
+import { spawn } from '../deps.ts';
 
 import ConnectCDP from '../lib/cdp.js';
 import InjectInto from './inject.js';

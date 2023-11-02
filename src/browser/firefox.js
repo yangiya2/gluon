@@ -1,5 +1,5 @@
-import { mkdir, writeFile } from 'https://deno.land/std@0.170.0/node/fs/promises.ts';
-import { join } from 'https://deno.land/std@0.170.0/node/path.ts';
+import { mkdir, writeFile } from '../deps.ts';
+import { join } from '../deps.ts';
 
 import StartBrowser from '../launcher/start.js';
 

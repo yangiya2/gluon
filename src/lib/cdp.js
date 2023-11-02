@@ -1,4 +1,4 @@
-import { get } from 'https://deno.land/std@0.170.0/node/http.ts';
+import { get } from '../deps.ts';
 
 const logCDP = Deno.args.includes('--cdp-logging');
 

@@ -6,8 +6,8 @@ Deno.version = { // have to do this because... Deno
   gluon: '0.10.0-deno'
 };
 
-import { join, dirname, delimiter, sep } from 'https://deno.land/std@0.170.0/node/path.ts';
-import { access, readdir } from 'https://deno.land/std@0.170.0/node/fs/promises.ts';
+import { join, dirname, delimiter, sep } from './deps.ts';
+import { access, readdir } from './deps.ts';
 
 import Chromium from './browser/chromium.js';
 import Firefox from './browser/firefox.js';
